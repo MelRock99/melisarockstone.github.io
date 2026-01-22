@@ -1,17 +1,67 @@
 ---
-
+const artistName = "Melisa Rockstone";
+const tagline = "Delta Blues Rock • Bayou Roots Rock";
+const email = "bizebee8888@yahoo.com"; // change if you want
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{artistName}</title>
+    <meta name="description" content={`${artistName} official website — music, videos, and contact.`} />
+  </head>
+
+  <body style="margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;">
+    <main style="max-width:900px;margin:0 auto;padding:32px 18px;line-height:1.5;">
+      <header style="display:flex;flex-direction:column;gap:10px;margin-bottom:28px;">
+        <h1 style="margin:0;font-size:44px;letter-spacing:-0.5px;">{artistName}</h1>
+        <p style="margin:0;font-size:18px;opacity:0.85;">{tagline}</p>
+        <nav style="display:flex;gap:14px;flex-wrap:wrap;margin-top:6px;">
+          <a href="#music">Music</a>
+          <a href="#videos">Videos</a>
+          <a href="#bio">Bio</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <section id="music" style="margin:34px 0;">
+        <h2 style="margin:0 0 10px;">Music</h2>
+        <p style="margin:0 0 12px;opacity:0.85;">Add your Spotify / Apple Music embeds here.</p>
+
+        <!-- Example Spotify embed (replace the src with your own) -->
+        <!--
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/XXXXXXXX" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        -->
+      </section>
+
+      <section id="videos" style="margin:34px 0;">
+        <h2 style="margin:0 0 10px;">Videos</h2>
+        <p style="margin:0 0 12px;opacity:0.85;">Add your YouTube videos here.</p>
+
+        <!-- Example YouTube embed (replace the video id) -->
+        <!--
+        <iframe width="100%" height="380" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        -->
+      </section>
+
+      <section id="bio" style="margin:34px 0;">
+        <h2 style="margin:0 0 10px;">Bio</h2>
+        <p style="margin:0;opacity:0.9;">
+          Write a short bio here — where you’re from, your sound, what you’re releasing next, and what you stand for.
+        </p>
+      </section>
+
+      <section id="contact" style="margin:34px 0;">
+        <h2 style="margin:0 0 10px;">Contact</h2>
+        <p style="margin:0 0 6px;">Bookings / collabs:</p>
+        <p style="margin:0;"><a href={`mailto:${email}`}>{email}</a></p>
+      </section>
+
+      <footer style="margin-top:44px;opacity:0.7;font-size:14px;">
+        © {new Date().getFullYear()} {artistName}. All rights reserved.
+      </footer>
+    </main>
+  </body>
 </html>
