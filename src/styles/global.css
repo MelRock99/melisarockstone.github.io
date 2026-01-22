@@ -1,0 +1,89 @@
+:root {
+  --bg: #0d0f12;            /* deep night blue / charcoal */
+  --panel: #15181d;         /* slightly lighter panels */
+  --text: #e6e1d8;          /* warm bone / parchment */
+  --muted: #b8b1a6;
+  --accent: #a3472c;        /* rust / bourbon red */
+  --accent-soft: #c45a3c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #141821, var(--bg));
+  color: var(--text);
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* LINKS */
+a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+a:hover {
+  color: var(--accent-soft);
+  border-bottom-color: var(--accent-soft);
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(to bottom, rgba(0,0,0,.7), rgba(0,0,0,.2));
+}
+
+header a {
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+h1 {
+  font-size: clamp(2.6rem, 6vw, 3.4rem);
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-top: 2.2rem;
+}
+
+/* PANELS (events, merch, sections) */
+section,
+.card {
+  background: var(--panel);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 14px;
+  padding: 18px;
+}
+
+/* BUTTON-LIKE LINKS */
+a.button,
+button {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.18);
+  background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(0,0,0,.25));
+  color: var(--text);
+  font-weight: 600;
+}
+
+a.button:hover {
+  background: linear-gradient(180deg, rgba(163,71,44,.25), rgba(0,0,0,.4));
+  border-color: var(--accent);
+}
+
+/* FOOTER */
+footer {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
