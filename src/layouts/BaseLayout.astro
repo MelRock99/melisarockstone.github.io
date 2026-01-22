@@ -32,20 +32,20 @@ const socials = {
   </head>
 
   <body>
-    <header>
-      <div style="max-width:980px;margin:0 auto;padding:18px 16px;display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;">
-        <a href="/" style="font-weight:800;letter-spacing:.3px;">
-          MelisaRockStone Music
-        </a>
+   <header>
+  <div style="max-width:980px;margin:0 auto;padding:18px 16px;display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;">
+    <a href="./" style="font-weight:800;letter-spacing:.3px;">
+      MelisaRockStone Music
+    </a>
 
-        <nav style="display:flex;gap:14px;flex-wrap:wrap;">
-         <a href={base}>Home</a>
-<a href={`${base}events`}>Events</a>
-<a href={`${base}merch`}>Merch</a>
-          <a href={`mailto:${email}`}>Contact</a>
-        </nav>
-      </div>
-    </header>
+    <nav style="display:flex;gap:14px;flex-wrap:wrap;">
+      <a href="./">Home</a>
+      <a href="./events">Events</a>
+      <a href="./merch">Merch</a>
+      <a href={`mailto:${email}`}>Contact</a>
+    </nav>
+  </div>
+</header>
 
     <main style="max-width:980px;margin:0 auto;padding:28px 16px;">
       <slot />
