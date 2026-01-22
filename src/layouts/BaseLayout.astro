@@ -50,13 +50,15 @@ const socials = {
           © {new Date().getFullYear()} MelisaRockStone Music •
           <a href={`mailto:${email}`}>{email}</a>
         </div>
+<div style="display:flex;gap:12px;font-size:14px;">
+  <a href={socials.facebook} target="_blank" rel="noreferrer">Facebook</a>
+  <a href={socials.instagram} target="_blank" rel="noreferrer">Instagram</a>
+  {socials.bluesky && (
+    <a href={socials.bluesky} target="_blank" rel="noreferrer">Bluesky</a>
+  )}
+</div>
 
-        <div style="display:flex;gap:12px;font-size:14px;">
-          <a href={socials.facebook} target="_blank">Facebook</a>
-          <a href={socials.instagram} target="_blank">Instagram</a>
-          <a href={socials.bluesky} target="_blank">Bluesky</a>
-        </div>
-      </div>
+             </div>
     </footer>
   </body>
 </html>
