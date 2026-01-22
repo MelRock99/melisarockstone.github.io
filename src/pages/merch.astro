@@ -1,0 +1,43 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const merch = [
+  // Example (delete or edit):
+  // { name: "T-Shirt (Black)", price: "$25", note: "Sizes S–XXL", link: "https://your-shop-link" },
+];
+---
+
+<BaseLayout title="Merch • MelisaRockStone Music">
+  <section class="card">
+    <h1 style="margin:0 0 10px;">Merch</h1>
+    <p style="margin:0;opacity:.92;">
+      Merch drop coming soon.
+    </p>
+    <p style="margin:12px 0 0;opacity:.92;">
+      Want something first? Email: <a href="mailto:Melisarockstone@gmail.com">Melisarockstone@gmail.com</a>
+    </p>
+  </section>
+
+  <section class="card" style="margin-top:18px;">
+    <h2 style="margin:0 0 10px;">Available</h2>
+
+    {merch.length === 0 ? (
+      <p style="margin:0;opacity:.92;">No items listed yet. Check back soon.</p>
+    ) : (
+      <div style="display:grid;gap:12px;">
+        {merch.map((m) => (
+          <div class="card" style="padding:14px;display:flex;gap:10px;justify-content:space-between;flex-wrap:wrap;">
+            <div>
+              <div style="font-weight:800;">{m.name}</div>
+              <div style="opacity:.85;font-size:14px;">{m.note}</div>
+            </div>
+            <div style="display:flex;gap:10px;align-items:center;">
+              <div style="font-weight:800;">{m.price}</div>
+              <a class="button" href={m.link} target="_blank" rel="noreferrer">Buy</a>
+            </div>
+          </div>
+        ))}
+      </div>
+    )}
+  </section>
+</BaseLayout>

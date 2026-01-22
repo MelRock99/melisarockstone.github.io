@@ -1,0 +1,38 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const events = [
+  // Example (delete or edit):
+  // { date: "Feb 14, 2026", city: "Orlando, FL", venue: "Venue Name", details: "8:00 PM • Tickets at door" },
+];
+---
+
+<BaseLayout title="Events • MelisaRockStone Music">
+  <section class="card">
+    <h1 style="margin:0 0 10px;">Events / Concerts</h1>
+    <p style="margin:0;opacity:.92;">
+      Upcoming dates will be posted here.
+    </p>
+    <p style="margin:12px 0 0;opacity:.92;">
+      Booking: <a href="mailto:Melisarockstone@gmail.com">Melisarockstone@gmail.com</a>
+    </p>
+  </section>
+
+  <section class="card" style="margin-top:18px;">
+    <h2 style="margin:0 0 10px;">Upcoming</h2>
+
+    {events.length === 0 ? (
+      <p style="margin:0;opacity:.92;">No events posted yet. Check back soon.</p>
+    ) : (
+      <div style="display:grid;gap:12px;">
+        {events.map((e) => (
+          <div class="card" style="padding:14px;">
+            <div style="font-weight:800;">{e.date} • {e.city}</div>
+            <div style="opacity:.92;">{e.venue}</div>
+            <div style="opacity:.8;margin-top:6px;font-size:14px;">{e.details}</div>
+          </div>
+        ))}
+      </div>
+    )}
+  </section>
+</BaseLayout>
