@@ -1,0 +1,15 @@
+
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const email = "Melisarockstone@gmail.com";
+---
+
+<BaseLayout title="Contact • MelisaRockStone Music">
+  <section class="card">
+    <h1 style="margin:0 0 10px;">Contact</h1>
+    <p style="margin:0;opacity:.92;">
+      Bookings / collabs:
+      <a href={`mailto:${email}`}>{email}</a>
+    </p>
+  </section>
+</BaseLayout>
