@@ -1,4 +1,3 @@
-
 ---
 import "../styles/global.css";
 
@@ -14,13 +13,10 @@ const email = "Melisarockstone@gmail.com";
 const socials = {
   facebook: "https://www.facebook.com/57VortexRock",
   instagram: "https://www.instagram.com/melisarockstone/",
-  bluesky: "",
   substack: "https://melisarockstone4real.substack.com/",
-
-
+  // bluesky: "", // add later when you have it
 };
-
-
+---
 
 <html lang="en">
   <head>
@@ -31,20 +27,20 @@ const socials = {
   </head>
 
   <body>
-<header>
-  <div style="max-width:980px;margin:0 auto;padding:18px 16px;display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;">
-    <a href={base} style="font-weight:800;letter-spacing:.3px;">
-      MelisaRockStone Music
-    </a>
+    <header>
+      <div style="max-width:980px;margin:0 auto;padding:18px 16px;display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;">
+        <a href={base} style="font-weight:800;letter-spacing:.3px;">
+          MelisaRockStone Music
+        </a>
 
-    <nav style="display:flex;gap:14px;flex-wrap:wrap;">
-      <a href={base}>Home</a>
-      <a href={`${base}events/`}>Events</a>
-      <a href={`${base}merch/`}>Merch</a>
-      <a href={`${base}contact/`}>Contact</a>
-    </nav>
-  </div>
-</header>
+        <nav style="display:flex;gap:14px;flex-wrap:wrap;">
+          <a href={base}>Home</a>
+          <a href={`${base}events/`}>Events</a>
+          <a href={`${base}merch/`}>Merch</a>
+          <a href={`${base}contact/`}>Contact</a>
+        </nav>
+      </div>
+    </header>
 
     <main style="max-width:980px;margin:0 auto;padding:28px 16px;">
       <slot />
@@ -53,18 +49,16 @@ const socials = {
     <footer>
       <div style="max-width:980px;margin:0 auto;padding:18px 16px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between;">
         <div style="font-size:14px;">
-         © {new Date().getFullYear()} MelisaRockStone Music • vSUBSTACKTEST •
-
+          © {new Date().getFullYear()} MelisaRockStone Music •
           <a href={`mailto:${email}`}>{email}</a>
         </div>
 
-<div style="display:flex;gap:12px;font-size:14px;flex-wrap:wrap;">
-  <a href={socials.facebook} target="_blank" rel="noreferrer">Facebook</a>
-  <a href={socials.instagram} target="_blank" rel="noreferrer">Instagram</a>
-  <a href={socials.bluesky} target="_blank" rel="noreferrer">Bluesky</a><a.href="https://melisarockstone4real.substack.com/" target="_blank" rel="noreferrer">Substack</a>
-</div>
-
-             </div>
+        <div style="display:flex;gap:12px;font-size:14px;flex-wrap:wrap;justify-content:flex-end;">
+          <a href={socials.facebook} target="_blank" rel="noreferrer">Facebook</a>
+          <a href={socials.instagram} target="_blank" rel="noreferrer">Instagram</a>
+          <a href={socials.substack} target="_blank" rel="noreferrer">Substack</a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
