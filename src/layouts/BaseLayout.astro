@@ -15,8 +15,8 @@ const socials = {
   facebook: "https://www.facebook.com/57VortexRock",
   instagram: "https://www.instagram.com/melisarockstone/",
   bluesky: "",
+  substack: "https://YOURNAME.substack.com",
 };
----
 
 
 <html lang="en">
@@ -53,12 +53,12 @@ const socials = {
           © {new Date().getFullYear()} MelisaRockStone Music •
           <a href={`mailto:${email}`}>{email}</a>
         </div>
+
 <div style="display:flex;gap:12px;font-size:14px;">
-  <a href={socials.facebook} target="_blank" rel="noreferrer">Facebook</a>
-  <a href={socials.instagram} target="_blank" rel="noreferrer">Instagram</a>
-  {socials.bluesky && (
-    <a href={socials.bluesky} target="_blank" rel="noreferrer">Bluesky</a>
-  )}
+  <a href={socials.facebook} target="_blank">Facebook</a>
+  <a href={socials.instagram} target="_blank">Instagram</a>
+  <a href={socials.bluesky} target="_blank">Bluesky</a>
+  <a href={socials.substack} target="_blank">Substack</a>
 </div>
 
              </div>
