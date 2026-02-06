@@ -54,12 +54,13 @@ const socials = {
           <a href={`mailto:${email}`}>{email}</a>
         </div>
 
-<div style="display:flex;gap:12px;font-size:14px;">
-  <a href={socials.facebook} target="_blank">Facebook</a>
-  <a href={socials.instagram} target="_blank">Instagram</a>
-  <a href={socials.bluesky} target="_blank">Bluesky</a>
-  <a href={socials.substack} target="_blank">Substack</a>
+<div style="display:flex;gap:12px;font-size:14px;flex-wrap:wrap;">
+  {socials.facebook && <a href={socials.facebook} target="_blank" rel="noreferrer">Facebook</a>}
+  {socials.instagram && <a href={socials.instagram} target="_blank" rel="noreferrer">Instagram</a>}
+  {socials.bluesky && <a href={socials.bluesky} target="_blank" rel="noreferrer">Bluesky</a>}
+  {socials.substack && <a href={socials.substack} target="_blank" rel="noreferrer">Substack</a>}
 </div>
+
 
              </div>
     </footer>
