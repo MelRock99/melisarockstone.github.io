@@ -15,21 +15,50 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   <!-- INTRO CARD -->
   <section class="card">
     <h1 style="margin:0 0 8px;">MelisaRockStone Music</h1>
-    <p style="margin:0;opacity:.92;">
-      Gritty blues-rooted rock with Florida heat and bayou soul.
+    <p style="margin:0;opacity:.92;max-width:760px;">
+      Blues-driven rock shaped by real life, spiritual transformation, and the grit of the South.
     </p>
 
     <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;">
       <a class="button" href="events/">Events</a>
-      <a class="button" href="merch/">Merch</a>
-      <a class="button" href="mailto:Melisarockstone@gmail.com">Contact</a>
+      <a class="button" href="contact/">Contact</a>
     </div>
   </section>
 
-  <!-- DIVIDER BETWEEN HERO + BIO -->
+  <!-- SHORT INTRO VIDEO -->
+  <section class="card" style="margin-top:24px; text-align:center;">
+    <h2>Step Into It</h2>
+
+    <p style="max-width:700px; margin:0 auto 18px; opacity:.92;">
+      A first glimpse into the sound, the spirit, and the world behind what’s being created.
+    </p>
+
+    <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:14px;">
+      <iframe
+        src="https://www.youtube.com/embed/GVCTXBScJqE"
+        title="MelisaRockStone Intro"
+        style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div style="margin-top:20px;">
+      <a
+        class="button"
+        href="https://www.patreon.com/cw/melisarockstone"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Go Deeper on Patreon
+      </a>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
   <div class="section-divider"></div>
 
-  <!-- BIO SECTION -->
+  <!-- BIO -->
   <section class="card">
     <h2>Bio</h2>
 
@@ -59,44 +88,55 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </p>
 
     <p>
-      This music is not created just to make a lot of noise. It's built to ROCK you steady! 
+      This isn’t music built for noise. It’s music built to steady you.
     </p>
 
-  <section class="card" style="text-align:center;">
-  <h2>Get the Music First</h2>
+    <p>
+      New releases, live performances, and deeper projects are underway.
+      If the sound resonates, you’re invited to follow the journey.
+    </p>
+  </section>
 
-  <p style="max-width:600px;margin:0 auto;opacity:.9;">
-    New releases, unreleased tracks, and deeper pieces I don’t put anywhere else.
-    If you feel the music — this is where it lands first.
-  </p>
+  <!-- PATREON SECTION -->
+  <section class="card" style="text-align:center; margin-top:24px;">
+    <h2>Support the Journey</h2>
 
-  <div style="margin-top:20px;">
-    <a
-      class="button"
-      href="https://melisarockstone4real.substack.com/"
-      target="_blank"
-    >
-      Join the List
-    </a>
-  </div>
-</section>
-<section class="card" style="text-align:center; margin-top:24px;">
-  <h2>Support the Journey</h2>
+    <p style="max-width:640px;margin:0 auto;opacity:.92;">
+      If this music speaks to you, there’s a deeper side to it —
+      early glimpses, private drops, and the world behind what’s being created.
+    </p>
 
-  <p style="max-width:640px;margin:0 auto;opacity:.92;">
-    This is where I share the deeper side of the work —
-    what’s being shaped, what’s coming next, and what doesn’t get posted everywhere else.
-  </p>
+    <div style="margin-top:20px;">
+      <a
+        class="button"
+        href="https://www.patreon.com/cw/melisarockstone"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Join on Patreon
+      </a>
+    </div>
+  </section>
 
-  <div style="margin-top:20px;">
-    <a
-      class="button"
-      href="https://www.patreon.com/cw/melisarockstone"
-      target="_blank"
-      rel="noreferrer"
-    >
-      Join on Patreon
-    </a>
-  </div>
-</section>
+  <!-- SUBSTACK / EMAIL SECTION -->
+  <section class="card" style="text-align:center; margin-top:24px;">
+    <h2>Get the Music First</h2>
+
+    <p style="max-width:600px;margin:0 auto;opacity:.92;">
+      New releases, unreleased pieces, and deeper notes from the journey.
+      If you feel the music, this is where it lands first.
+    </p>
+
+    <div style="margin-top:20px;">
+      <a
+        class="button"
+        href="https://melisarockstone4real.substack.com/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Join the List
+      </a>
+    </div>
+  </section>
+
 </BaseLayout>
