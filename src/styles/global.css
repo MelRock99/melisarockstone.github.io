@@ -248,3 +248,46 @@ nav a:hover {
   color: #f2e8dc;
 }
 
+/* ===== CINEMATIC VIDEO SECTION ===== */
+.cinematic-video-section {
+  margin-top: 28px;
+  text-align: center;
+  padding: 26px 22px 30px;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.02),
+    rgba(0,0,0,0.18)
+  );
+}
+
+.cinematic-video-section h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.cinematic-video-text {
+  max-width: 720px;
+  margin: 0 auto 22px;
+  opacity: 0.92;
+}
+
+.cinematic-video-frame {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #0a0c0f;
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.35),
+    0 0 0 1px rgba(255,255,255,0.05);
+}
+
+.cinematic-video-frame iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
