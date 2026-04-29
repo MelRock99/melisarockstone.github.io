@@ -1,0 +1,27 @@
+<section class="card cinematic-video-section">
+  <h2>Step Into the Sound</h2>
+
+  <p class="cinematic-video-text">
+    A first glimpse into the sound, the spirit, and the world behind what’s being created.
+  </p>
+
+  <div class="cinematic-video-frame">
+    <iframe
+      src="https://www.youtube.com/embed/GVCTXBScJqE"
+      title="MelisaRockStone Intro"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <div style="margin-top:20px;">
+    <a
+      class="button"
+      href="https://www.patreon.com/cw/melisarockstone"
+      target="_blank"
+      rel="noreferrer"
+    >
+      Go Deeper on Patreon
+    </a>
+  </div>
+</section>
