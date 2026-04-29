@@ -1,15 +1,46 @@
-
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-const email = "Melisarockstone@gmail.com";
 ---
 
 <BaseLayout title="Contact • MelisaRockStone Music">
   <section class="card">
-    <h1 style="margin:0 0 10px;">Contact</h1>
-    <p style="margin:0;opacity:.92;">
-      Bookings / collabs:
-      <a href={`mailto:${email}`}>{email}</a>
+    <h1 style="margin:0 0 10px;">Book Melisa Rockstone</h1>
+
+    <p>Or email directly: 
+      <a href="mailto:Melisarockstone@gmail.com">
+        Melisarockstone@gmail.com
+      </a>
     </p>
+
+    <form action="https://formspree.io/f/mwvaggrj" method="POST">
+      
+      <label>Name:</label><br>
+      <input type="text" name="name" required><br><br>
+
+      <label>Email:</label><br>
+      <input type="email" name="email" required><br><br>
+
+      <label>Phone Number:</label><br>
+      <input type="tel" name="phone"><br><br>
+
+      <label>Venue Name:</label><br>
+      <input type="text" name="venue"><br><br>
+
+      <label>Venue Location:</label><br>
+      <input type="text" name="location"><br><br>
+
+      <label>Requested Date:</label><br>
+      <input type="date" name="date"><br><br>
+
+      <label>Requested Time:</label><br>
+      <input type="time" name="time"><br><br>
+
+      <label>Additional Details:</label><br>
+      <textarea name="message" rows="5"></textarea><br><br>
+
+      <button type="submit">Submit Booking Request</button>
+
+    </form>
+
   </section>
 </BaseLayout>
