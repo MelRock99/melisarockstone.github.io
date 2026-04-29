@@ -3,44 +3,129 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Contact • MelisaRockStone Music">
-  <section class="card">
-    <h1 style="margin:0 0 10px;">Book Melisa Rockstone</h1>
 
-    <p>Or email directly: 
-      <a href="mailto:Melisarockstone@gmail.com">
+<div style="
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 18px;
+  margin-bottom: 28px;
+">
+
+  <!-- 🎬 VIDEO BACKGROUND -->
+  <video autoplay muted loop playsinline style="
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+  ">
+    <source src="https://cdn.coverr.co/videos/coverr-stage-lights-1573/1080p.mp4" type="video/mp4">
+  </video>
+
+  <!-- 🔥 DARK OVERLAY -->
+  <div style="
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.6);
+    z-index:1;
+  "></div>
+
+  <!-- 🎤 TEXT CONTENT -->
+  <div style="
+    position: relative;
+    z-index:2;
+    text-align:center;
+    color:white;
+    padding-top:120px;
+  ">
+
+    <h1 style="
+      font-size:42px;
+      margin:0 0 12px;
+      text-shadow:0 0 20px rgba(255,80,120,0.9);
+    ">
+      Book Melisa Rockstone
+    </h1>
+
+    <p style="
+      font-size:18px;
+      opacity:.95;
+    ">
+      Live Blues • Rock • Soul Energy
+    </p>
+
+  </div>
+
+</div>
+
+
+  <!-- 🎸 BOOKING FORM -->
+  <section class="card" style="
+    background: linear-gradient(135deg, rgba(0,0,0,0.92), rgba(25,25,25,0.98));
+    color:white;
+    border:1px solid rgba(255,255,255,0.12);
+    box-shadow:0 0 30px rgba(255,80,120,0.25);
+    border-radius:18px;
+    padding:20px;
+  ">
+
+    <p style="margin-bottom:20px;">
+      Or email directly:
+      <a href="mailto:Melisarockstone@gmail.com" style="color:#ff4d6d;">
         Melisarockstone@gmail.com
       </a>
     </p>
 
     <form action="https://formspree.io/f/mwvaggrj" method="POST">
-      
-      <label>Name:</label><br>
-      <input type="text" name="name" required><br><br>
 
-      <label>Email:</label><br>
-      <input type="email" name="email" required><br><br>
+      <label>Name:</label>
+      <input type="text" name="name" required style="width:100%; padding:8px; margin:6px 0 12px;">
 
-      <label>Phone Number:</label><br>
-      <input type="tel" name="phone"><br><br>
+      <label>Email:</label>
+      <input type="email" name="email" required style="width:100%; padding:8px; margin:6px 0 12px;">
 
-      <label>Venue Name:</label><br>
-      <input type="text" name="venue"><br><br>
+      <label>Phone Number:</label>
+      <input type="tel" name="phone" style="width:100%; padding:8px; margin:6px 0 12px;">
 
-      <label>Venue Location:</label><br>
-      <input type="text" name="location"><br><br>
+      <label>Venue Name:</label>
+      <input type="text" name="venue" style="width:100%; padding:8px; margin:6px 0 12px;">
 
-      <label>Requested Date:</label><br>
-      <input type="date" name="date"><br><br>
+      <label>Venue Location:</label>
+      <input type="text" name="location" style="width:100%; padding:8px; margin:6px 0 12px;">
 
-      <label>Requested Time:</label><br>
-      <input type="time" name="time"><br><br>
+      <label>Requested Date (e.g. May 12, 2026):</label>
+      <input type="date" name="date" required style="width:100%; padding:8px; margin:6px 0;">
+      <small>Please select your event date (your local format will be used).</small><br><br>
 
-      <label>Additional Details:</label><br>
-      <textarea name="message" rows="5"></textarea><br><br>
+      <label>Requested Time:</label>
+      <input type="time" name="time" style="width:100%; padding:8px; margin:6px 0 12px;">
 
-      <button type="submit">Submit Booking Request</button>
+      <label>Additional Details:</label>
+      <textarea name="message" rows="4" placeholder="Tell me about your event..." style="width:100%; height:220px; padding:8px; margin:6px 0 12px;"></textarea>
+
+      <button type="submit" style="
+        padding:14px 24px;
+        background: linear-gradient(135deg, #ff4d6d, #ff9a3c);
+        color:#fff;
+        border:none;
+        border-radius:999px;
+        font-weight:bold;
+        letter-spacing:0.5px;
+        cursor:pointer;
+        width:100%;
+      ">
+        Submit Booking Request
+      </button>
 
     </form>
 
   </section>
+
 </BaseLayout>
