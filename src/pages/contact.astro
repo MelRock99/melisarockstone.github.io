@@ -99,6 +99,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
     <form action="https://formspree.io/f/mwvaggrj" method="POST">
 
+<label>What are you contacting me about?</label>
+<select name="subject" required style="width:100%; padding:8px; margin:6px 0 12px;">
+  <option value="">Please choose one</option>
+  <option value="JOIN_MY_MUSIC">Join My Music (Play on Songs)</option>
+  <option value="REQUEST_MELISA">Request: Melisa Join Your Music Project</option>
+  <option value="BOOKING">Book a Performance</option>
+  <option value="GENERAL">General Inquiry</option>
+</select>
+
       <label>Name:</label>
       <input type="text" name="name" required style="width:100%; padding:8px; margin:6px 0 12px;">
 
