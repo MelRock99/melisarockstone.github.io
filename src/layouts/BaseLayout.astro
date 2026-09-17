@@ -13,8 +13,11 @@ const email = "Melisarockstone@gmail.com";
 const socials = {
   facebook: "https://www.facebook.com/57VortexRock",
   instagram: "https://www.instagram.com/melisarockstone/",
-  substack: "https://melisarockstone4real.substack.com/",
-  // bluesky: "", // add later when you have it
+  tiktok: "https://www.tiktok.com/@melisarockstone.c",
+  bluesky: "https://bsky.app/profile/melisarockstone.bsky.social",
+  substack: "https://melisarockstone4real.substack.com",
+  patreon: "https://www.patreon.com/cw/melisarockstone",
+  x: "https://x.com/99VortexRock",
 };
 ---
 
@@ -46,18 +49,45 @@ const socials = {
     </main>
 
     <footer>
-      <div style="max-width:980px;margin:0 auto;padding:18px 16px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between;">
-        <div style="font-size:14px;">
-          © {new Date().getFullYear()} MelisaRockStone Music •
-          <a href={`mailto:${email}`}>{email}</a>
-        </div>
 
-        <div style="display:flex;gap:12px;font-size:14px;flex-wrap:wrap;justify-content:flex-end;">
-          <a href={socials.facebook} target="_blank" rel="noreferrer">Facebook</a>
-          <a href={socials.instagram} target="_blank" rel="noreferrer">Instagram</a>
-          <a href={socials.substack} target="_blank" rel="noreferrer">Substack</a>
-        </div>
-      </div>
-    </footer>
+  <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:flex-end;align-items:center;">
+
+  <a href={socials.facebook} target="_blank" rel="noreferrer"
+     aria-label="Facebook" title="Facebook">
+    <img src="https://cdn.simpleicons.org/facebook" alt="Facebook" width="24" height="24" />
+  </a>
+
+  <a href={socials.instagram} target="_blank" rel="noreferrer"
+     aria-label="Instagram" title="Instagram">
+    <img src="https://cdn.simpleicons.org/instagram" alt="Instagram" width="24" height="24" />
+  </a>
+
+  <a href={socials.tiktok} target="_blank" rel="noreferrer"
+     aria-label="TikTok" title="TikTok">
+    <img src="https://cdn.simpleicons.org/tiktok" alt="TikTok" width="24" height="24" />
+  </a>
+
+  <a href={socials.bluesky} target="_blank" rel="me noreferrer"
+     aria-label="Bluesky" title="Bluesky">
+    <img src="https://cdn.simpleicons.org/bluesky" alt="Bluesky" width="24" height="24" />
+  </a>
+
+  <a href={socials.substack} target="_blank" rel="noreferrer"
+     aria-label="Substack" title="Substack">
+    <img src="https://cdn.simpleicons.org/substack" alt="Substack" width="24" height="24" />
+  </a>
+
+  <a href={socials.patreon} target="_blank" rel="noreferrer"
+     aria-label="Patreon" title="Patreon">
+    <img src="https://cdn.simpleicons.org/patreon" alt="Patreon" width="24" height="24" />
+  </a>
+
+  <a href={socials.x} target="_blank" rel="noreferrer"
+     aria-label="X" title="X">
+    <img src="https://cdn.simpleicons.org/x" alt="X" width="24" height="24" />
+  </a>
+</div>
+</div>
+</footer>
   </body>
 </html>
