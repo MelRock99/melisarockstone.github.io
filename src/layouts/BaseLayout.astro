@@ -44,51 +44,61 @@ const socials = {
       </div>
     </header>
 
+   
+    </header>
+
     <main style="max-width:980px;margin:0 auto;padding:28px 16px;">
       <slot />
     </main>
 
     <footer>
+      <div style="max-width:980px;margin:0 auto;padding:18px 16px 34px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between;">
 
-  <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:flex-end;align-items:center;">
+        <div style="font-size:14px;">
+          © {new Date().getFullYear()} MelisaRockStone Music •
+          <a href={`mailto:${email}`}>{email}</a>
+        </div>
 
-  <a href={socials.facebook} target="_blank" rel="noreferrer"
-     aria-label="Facebook" title="Facebook">
-    <img src="https://cdn.simpleicons.org/facebook" alt="Facebook" width="24" height="24" />
-  </a>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:flex-end;align-items:center;">
 
-  <a href={socials.instagram} target="_blank" rel="noreferrer"
-     aria-label="Instagram" title="Instagram">
-    <img src="https://cdn.simpleicons.org/instagram" alt="Instagram" width="24" height="24" />
-  </a>
+          <a href={socials.facebook} target="_blank" rel="noreferrer"
+             aria-label="Facebook" title="Facebook">
+            <img src="https://cdn.simpleicons.org/facebook" alt="Facebook" width="24" height="24" />
+          </a>
 
-  <a href={socials.tiktok} target="_blank" rel="noreferrer"
-     aria-label="TikTok" title="TikTok">
- <img src="https://cdn.simpleicons.org/tiktok/ffffff" alt="TikTok" width="24" height="24" />
-  </a>
+          <a href={socials.instagram} target="_blank" rel="noreferrer"
+             aria-label="Instagram" title="Instagram">
+            <img src="https://cdn.simpleicons.org/instagram" alt="Instagram" width="24" height="24" />
+          </a>
 
-  <a href={socials.bluesky} target="_blank" rel="me noreferrer"
-     aria-label="Bluesky" title="Bluesky">
-    <img src="https://cdn.simpleicons.org/bluesky" alt="Bluesky" width="24" height="24" />
-  </a>
+          <a href={socials.tiktok} target="_blank" rel="noreferrer"
+             aria-label="TikTok" title="TikTok">
+            <img src="https://cdn.simpleicons.org/tiktok/ffffff" alt="TikTok" width="24" height="24" />
+          </a>
 
-  <a href={socials.substack} target="_blank" rel="noreferrer"
-     aria-label="Substack" title="Substack">
-    <img src="https://cdn.simpleicons.org/substack" alt="Substack" width="24" height="24" />
-  </a>
-<a href={socials.patreon} target="_blank" rel="noreferrer"
-   aria-label="Patreon" title="Patreon">
-  <img src="https://cdn.simpleicons.org/patreon/ffffff" alt="Patreon" width="24" height="24" />
-</a>
+          <a href={socials.bluesky} target="_blank" rel="me noreferrer"
+             aria-label="Bluesky" title="Bluesky">
+            <img src="https://cdn.simpleicons.org/bluesky" alt="Bluesky" width="24" height="24" />
+          </a>
 
-<a href={socials.x} target="_blank" rel="noreferrer"
-   aria-label="X" title="X">
-  <img src="https://cdn.simpleicons.org/x/ffffff" alt="X" width="24" height="24" />
-</a>
+          <a href={socials.substack} target="_blank" rel="noreferrer"
+             aria-label="Substack" title="Substack">
+            <img src="https://cdn.simpleicons.org/substack" alt="Substack" width="24" height="24" />
+          </a>
 
-</div>
-</div>
-</footer>
+          <a href={socials.patreon} target="_blank" rel="noreferrer"
+             aria-label="Patreon" title="Patreon">
+            <img src="https://cdn.simpleicons.org/patreon/ffffff" alt="Patreon" width="24" height="24" />
+          </a>
+
+          <a href={socials.x} target="_blank" rel="noreferrer"
+             aria-label="X" title="X">
+            <img src="https://cdn.simpleicons.org/x/ffffff" alt="X" width="24" height="24" />
+          </a>
+
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
 
